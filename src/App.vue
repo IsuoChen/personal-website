@@ -1,9 +1,21 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-content>
+      <Navigation/>
+      <router-view/>
+    </v-content>
+  </v-app>
 </template>
+<script>
+import Navigation from '@/components/navigation.vue'
+export default {
+  components: {
+    Navigation
+  }
+}
+</script>
+<style>
+/* *{
+  outline: 1px solid red;
+} */
+</style>
