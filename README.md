@@ -1,3 +1,3 @@
 # personal-website
 
-[DEMO](isuo-c.nctu.me)
+[DEMO](http://isuo-c.nctu.me)
