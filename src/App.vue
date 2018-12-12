@@ -8,13 +8,15 @@
 </template>
 <script>
 import TheNavigation from '@/components/TheNavigation.vue'
+
 export default {
   components: {
     TheNavigation
   }
 }
 </script>
-<style>
+<style lang="scss">
+@import '@/assets/css/common.scss';
 /* *{
   outline: 1px solid red;
 } */
