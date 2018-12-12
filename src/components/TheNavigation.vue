@@ -14,9 +14,9 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-toolbar color="white" flat fixed app>
+    <v-toolbar color="#FBFBF9" class="elevation-1" fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>Home</v-toolbar-title>
+      <v-toolbar-title>TEST</v-toolbar-title>
     </v-toolbar>
   </div>
 </template>

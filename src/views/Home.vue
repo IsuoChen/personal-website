@@ -1,14 +1,12 @@
 <template>
   <v-container fluid fill-height>
-    <v-layout row wrap align-center justify-space-around>
+    <v-layout row wrap align-center justify-center>
       <v-flex xs12 md4 lg3>
         <TheProfile/>
       </v-flex>
       <v-flex xs12 md7 lg6>
         <v-layout justify-center class="card_container">
-          <v-flex xs10 md9 lg9>
-            <WorkCard/>
-            <WorkCard/>
+          <v-flex xs10 md8 lg7>
             <WorkCard/>
           </v-flex>
         </v-layout>
@@ -16,7 +14,6 @@
     </v-layout>
   </v-container>
 </template>
-
 <script>
 // @ is an alias to /src
 import TheProfile from '@/components/TheProfile.vue'
@@ -32,7 +29,7 @@ export default {
 </script>
 <style>
   .card_container {
-    height: 550px;
+    height: 580px;
     overflow-y: scroll;
   }
 </style>

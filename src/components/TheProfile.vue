@@ -7,7 +7,7 @@
     <div class="subheading text-xs-center grey--text pa-2">Nice to meet you!</div>
     <v-layout justify-center>
       <a href="javascript:;" class="body-2 px-2">About</a>
-      <a href="https://github.com/IsuoChen" class="body-2 px-2">GitHub</a>
+      <a href="https://github.com/IsuoChen" target="_blank" class="body-2 px-2">GitHub</a>
       <a href="mailto:itzuchen5027@gmail.com" class="body-2 px-2">Mail</a>
     </v-layout>
   </div>
