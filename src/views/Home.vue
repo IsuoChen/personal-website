@@ -4,10 +4,10 @@
       <v-flex xs12 md4 lg3>
         <TheProfile/>
       </v-flex>
-      <v-flex xs12 md7 lg6>
+      <v-flex xs12 md7 lg6 class="py-3">
         <v-layout justify-center class="card_container">
           <v-flex xs10 md8 lg7>
-            <WorkCard/>
+            <WorkCard :cards="cards"/>
           </v-flex>
         </v-layout>
       </v-flex>
@@ -24,12 +24,55 @@ export default {
   components: {
     TheProfile,
     WorkCard
-  }
+  },
+  data: () => ({
+    cards: [{
+      images: 'card-future.png',
+      label: [
+        { text: 'HTML5' },
+        { text: 'CSS3' },
+        { text: 'JavaScript' },
+        { text: 'JQuery' },
+        { text: 'AJAX' },
+        { text: 'PHP' }
+      ],
+      title: 'FUTURE ATLAS <span>未來主題樂園</span>',
+      subTitle: '資策會結訓小組專題作品',
+      description: '主要負責: 導引頁、Loading程式、轉場程式、首頁第一屏、導覽列、設施介紹、設施購票、設施前後台資料串接、後台設施管理、後台諮詢管理',
+      btnDemo: {
+        disabled: false,
+        href: 'http://140.115.236.72/demo-projects/BD103/BD103G3/home.php'
+      },
+      btnGitHub: {
+        disabled: false,
+        href: 'https://github.com/chou0728/future-atlas'
+      }
+    },
+    {
+      images: 'card-shikiori.png',
+      label: [
+        { text: 'HTML5' },
+        { text: 'CSS3' },
+        { text: 'JQuery' }
+      ],
+      title: '<span>四季織精品服飾店</span>',
+      subTitle: '資策會結訓個人靜態作品',
+      description: 'RWD手刻',
+      btnDemo: {
+        disabled: false,
+        href: 'http://140.115.236.72/demo-personal/BD103/web/C1700339/index/'
+      },
+      btnGitHub: {
+        disabled: true,
+        href: ''
+      }
+    }]
+  })
 }
 </script>
 <style>
   .card_container {
-    height: 580px;
+    height: 600px;
     overflow-y: scroll;
   }
 </style>

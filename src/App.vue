@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <v-content>
       <TheNavigation/>
       <router-view/>
@@ -20,4 +20,7 @@ export default {
 /* *{
   outline: 1px solid red;
 } */
+  // #app {
+  //   background-image: url('./assets/images/background.jpg');
+  // }
 </style>
