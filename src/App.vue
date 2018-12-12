@@ -1,16 +1,16 @@
 <template>
   <v-app>
     <v-content>
-      <Navigation/>
+      <TheNavigation/>
       <router-view/>
     </v-content>
   </v-app>
 </template>
 <script>
-import Navigation from '@/components/navigation.vue'
+import TheNavigation from '@/components/TheNavigation.vue'
 export default {
   components: {
-    Navigation
+    TheNavigation
   }
 }
 </script>
