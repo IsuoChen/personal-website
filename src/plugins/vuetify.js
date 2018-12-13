@@ -9,6 +9,7 @@ Vue.use(Vuetify, {
     secondary: '#DED9DE', // #FFCDD2
     accent: '#FFCF46', // #3F51B5
     black: '#2C3044',
-    'card-chip': '#F7DA93'
+    white: '#F1F2F4',
+    'card-chip': '#F3B85D'
   }
 })

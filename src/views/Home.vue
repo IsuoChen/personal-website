@@ -27,6 +27,25 @@ export default {
   },
   data: () => ({
     cards: [{
+      images: 'card-shikiori.png',
+      label: [
+        { text: 'HTML5' },
+        { text: 'CSS3' },
+        { text: 'D3.js' }
+      ],
+      title: '<span>title</span>',
+      subTitle: 'subTitle',
+      description: 'description',
+      btnDemo: {
+        disabled: false,
+        href: 'http://140.115.236.72/demo-personal/BD103/web/C1700339/index/'
+      },
+      btnGitHub: {
+        disabled: true,
+        href: ''
+      }
+    },
+    {
       images: 'card-future.png',
       label: [
         { text: 'HTML5' },
@@ -70,7 +89,7 @@ export default {
   })
 }
 </script>
-<style>
+<style scoped>
   .card_container {
     height: 600px;
     overflow-y: scroll;

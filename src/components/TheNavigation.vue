@@ -14,9 +14,9 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-toolbar color="#FBFBF9" class="elevation-1" fixed app>
+    <v-toolbar color="black" class="elevation-1" fixed dark dense app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>TEST</v-toolbar-title>
+      <v-toolbar-title class="secondary--text">HOME</v-toolbar-title>
     </v-toolbar>
   </div>
 </template>
