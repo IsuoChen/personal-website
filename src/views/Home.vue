@@ -27,7 +27,6 @@ export default {
   },
   data: () => ({
     cards: [{
-      images: 'card-shikiori.png',
       label: [
         { text: 'HTML5' },
         { text: 'CSS3' },
@@ -38,7 +37,8 @@ export default {
       description: 'description',
       btnDemo: {
         disabled: false,
-        href: 'http://140.115.236.72/demo-personal/BD103/web/C1700339/index/'
+        href: '/practice-ajax',
+        target: '_self'
       },
       btnGitHub: {
         disabled: true,
@@ -46,7 +46,6 @@ export default {
       }
     },
     {
-      images: 'card-future.png',
       label: [
         { text: 'HTML5' },
         { text: 'CSS3' },
@@ -60,7 +59,8 @@ export default {
       description: '主要負責: 導引頁、Loading程式、轉場程式、首頁第一屏、導覽列、設施介紹、設施購票、設施前後台資料串接、後台設施管理、後台諮詢管理',
       btnDemo: {
         disabled: false,
-        href: 'http://140.115.236.72/demo-projects/BD103/BD103G3/home.php'
+        href: 'http://140.115.236.72/demo-projects/BD103/BD103G3/home.php',
+        target: '_blank'
       },
       btnGitHub: {
         disabled: false,
@@ -68,7 +68,6 @@ export default {
       }
     },
     {
-      images: 'card-shikiori.png',
       label: [
         { text: 'HTML5' },
         { text: 'CSS3' },
@@ -79,14 +78,18 @@ export default {
       description: 'RWD手刻',
       btnDemo: {
         disabled: false,
-        href: 'http://140.115.236.72/demo-personal/BD103/web/C1700339/index/'
+        href: 'http://140.115.236.72/demo-personal/BD103/web/C1700339/index/',
+        target: '_blank'
       },
       btnGitHub: {
         disabled: true,
         href: ''
       }
     }]
-  })
+  }),
+  mounted() {
+    this.$store.commit('SetPageName', { name: this.$route.name })
+  }
 }
 </script>
 <style scoped>
