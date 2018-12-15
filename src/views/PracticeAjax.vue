@@ -44,6 +44,9 @@ export default {
     this.$store.commit('SetPageName', { name: this.$route.name })
     this.loadDoc(1)
   },
+  beforeDestroy() {
+    this.$store.commit('LoadingCircular', { isLoading: false })
+  },
   methods: {
     // loadDoc(page) {
     //   let xhttp
