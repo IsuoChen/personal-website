@@ -28,21 +28,24 @@ export default {
   data: () => ({
     cards: [{
       label: [
-        { text: 'HTML5' },
-        { text: 'CSS3' },
-        { text: 'D3.js' }
+        { text: 'Vue.js' },
+        { text: 'VueX' },
+        { text: 'Vuetify' },
+        { text: 'D3.js' },
+        { text: 'Ajax' }
       ],
-      title: '<span>title</span>',
-      subTitle: 'subTitle',
-      description: 'description',
+      date: 'December, 2018',
+      title: '<span>Practice Ajax</span>',
+      subTitle: '練習串接API, 使用Ajax/vue-resource',
+      description: '串接資料後製作table及圖表',
       btnDemo: {
         disabled: false,
         href: '/practice-ajax',
         target: '_self'
       },
       btnGitHub: {
-        disabled: true,
-        href: ''
+        disabled: false,
+        href: 'https://github.com/IsuoChen/personal-website/blob/master/src/views/PracticeAjax.vue'
       }
     },
     {
@@ -54,6 +57,7 @@ export default {
         { text: 'AJAX' },
         { text: 'PHP' }
       ],
+      date: 'February, 2018',
       title: 'FUTURE ATLAS <span>未來主題樂園</span>',
       subTitle: '資策會結訓小組專題作品',
       description: '主要負責: 導引頁、Loading程式、轉場程式、首頁第一屏、導覽列、設施介紹、設施購票、設施前後台資料串接、後台設施管理、後台諮詢管理',
@@ -73,6 +77,7 @@ export default {
         { text: 'CSS3' },
         { text: 'JQuery' }
       ],
+      date: 'December, 2017',
       title: '<span>四季織精品服飾店</span>',
       subTitle: '資策會結訓個人靜態作品',
       description: 'RWD手刻',

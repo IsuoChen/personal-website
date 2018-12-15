@@ -4,6 +4,7 @@
       <!-- <v-img :src="require(`@/assets/images/${ item.images }`)" aspect-ratio="2.5"></v-img> -->
       <v-card-title primary-title>
         <div>
+          <div>{{ item.date }}</div>
           <h3 class="headline pb-2" v-html="item.title">{{ item.title }}</h3>
           <v-chip class="ml-0 mr-1 mt-0 caption" small outline disabled color="card-chip" v-for="(chip, index) in item.label" :key="index">{{ chip.text }}</v-chip>
           <div class="subheading py-1">{{ item.subTitle }}</div>
