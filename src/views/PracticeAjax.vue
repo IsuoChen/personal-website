@@ -40,7 +40,8 @@ export default {
       { text: 'Mass', value: 'mass' }
     ],
     characters: [],
-    mode: 'table'
+    mode: 'table',
+    errorMes: ''
   }),
   mounted() {
     this.$store.commit('SetPageName', { name: this.$route.name })
@@ -75,7 +76,7 @@ export default {
         })
         .catch( err => {
           // 待做處理
-          console.log(err)
+          this.errorMes = String(err)
         })
         .finally(() => {
           // loading end
