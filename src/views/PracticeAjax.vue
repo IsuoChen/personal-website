@@ -5,27 +5,28 @@
         <v-btn to="/" color="black" flat><v-icon left>arrow_left</v-icon>Back to prev page</v-btn>
       </v-flex>
       <v-flex xs12>
-        <v-btn disabled="">table</v-btn>
-        <v-btn>chart</v-btn>
+        <v-btn @click="mode = 'table'" :disabled="mode === 'table'">table</v-btn>
+        <v-btn @click="mode = 'chart'" :disabled="mode === 'chart'">chart</v-btn>
       </v-flex>
       <!-- data-table -->
       <v-flex xs12 class="pa-2">
-        <v-data-table :headers="headers" :items="characters" hide-actions class="elevation-1">
+        <v-data-table v-if="mode === 'table'" :headers="headers" :items="characters" hide-actions class="elevation-1">
           <template slot="items" slot-scope="props">
             <td>{{ props.item.name }}</td>
             <td>{{ props.item.height }}</td>
             <td>{{ props.item.mass }}</td>
           </template>
         </v-data-table>
+        <D3BarChart v-if="mode === 'chart'" :data="characters" />
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 <script>
-
+import D3BarChart from '@/components/D3BarChart.vue'
 export default {
   components: {
-
+    D3BarChart
   },
   data: () => ({
     headers: [
@@ -38,7 +39,8 @@ export default {
       { text: 'Height', value: 'height' },
       { text: 'Mass', value: 'mass' }
     ],
-    characters: []
+    characters: [],
+    mode: 'table'
   }),
   mounted() {
     this.$store.commit('SetPageName', { name: this.$route.name })

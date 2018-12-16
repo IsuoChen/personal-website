@@ -36,8 +36,8 @@ export default {
       ],
       date: 'December, 2018',
       title: '<span>Practice Ajax</span>',
-      subTitle: '練習串接API, 使用Ajax/vue-resource',
-      description: '串接資料後製作table及圖表, D3 BarChart 部分未完成',
+      subTitle: '使用Ajax/vue-resource, 練習串接API',
+      description: '串接資料後製作table, 使用D3.js繪製Bar Chart',
       btnDemo: {
         disabled: false,
         href: '/practice-ajax',

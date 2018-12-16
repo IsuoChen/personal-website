@@ -40,6 +40,11 @@
           title: 'About',
           icon: 'face',
           href: '/about'
+        },
+        {
+          title: 'Practice-Ajax',
+          icon: 'bar_chart',
+          href: '/practice-ajax'
         }
       ]
     })

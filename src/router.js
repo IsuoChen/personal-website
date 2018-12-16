@@ -22,6 +22,11 @@ export default new Router({
       path: '/practice-ajax',
       name: 'Practice-Ajax',
       component: () => import('./views/PracticeAjax.vue')
+    },
+    {
+      path: '/test',
+      name: 'testD3',
+      component: () => import('./components/D3BarChart.vue')
     }
   ]
 })
