@@ -40,7 +40,7 @@ export default {
       description: '串接資料後製作table, 使用D3.js繪製Bar Chart',
       btnDemo: {
         disabled: false,
-        href: '/practice-ajax',
+        href: '/#/practice-ajax',
         target: '_self'
       },
       btnGitHub: {
